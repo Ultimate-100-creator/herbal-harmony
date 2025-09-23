@@ -1,10 +1,8 @@
 
 import React from 'react';
 import { Icon, SvgIcon } from './Icon';
-<<<<<<< HEAD
 import { NavLink, Link } from 'react-router-dom';
-=======
->>>>>>> f662d2a163fad1ffeb124f7467026e00b46cfaa1
+import { useCart } from './CartContext';
 
 interface HeaderProps {
   searchQuery: string;
@@ -12,6 +10,9 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({ searchQuery, onSearchChange }) => {
+  const { cartItems } = useCart();
+  const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+
   return (
     <header className="bg-white sticky top-0 z-50 shadow-sm">
       <div className="bg-gray-100 text-xs text-gray-600">
@@ -32,15 +33,9 @@ export const Header: React.FC<HeaderProps> = ({ searchQuery, onSearchChange }) =
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-8">
-<<<<<<< HEAD
             <Link to="/" className="text-2xl font-bold text-gray-900">
               supplentia<span className="text-green-600">rx</span>
             </Link>
-=======
-            <a href="#" className="text-2xl font-bold text-gray-900">
-              Herbal<span className="text-green-600">Harmony</span>
-            </a>
->>>>>>> f662d2a163fad1ffeb124f7467026e00b46cfaa1
           </div>
           <div className="flex-1 max-w-lg mx-8">
             <div className="relative">
@@ -61,26 +56,26 @@ export const Header: React.FC<HeaderProps> = ({ searchQuery, onSearchChange }) =
               <SvgIcon icon="tradeIn" className="w-5 h-5" />
               <span>Subscribe</span>
             </a>
-            <a href="#" className="hover:text-green-600">Need help?</a>
+            <Link to="/track-order" className="hover:text-green-600">Track Order</Link>
             <a href="#" className="p-2 hover:bg-gray-100 rounded-full"><SvgIcon icon="user" className="w-6 h-6" /></a>
-            <a href="#" className="p-2 hover:bg-gray-100 rounded-full"><SvgIcon icon="cart" className="w-6 h-6" /></a>
+            <Link to="/cart" className="relative p-2 hover:bg-gray-100 rounded-full">
+              <SvgIcon icon="cart" className="w-6 h-6" />
+              {totalItems > 0 && (
+                <span className="absolute top-0 right-0 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                  {totalItems}
+                </span>
+              )}
+            </Link>
           </div>
         </div>
       </div>
       
       <div className="border-t">
         <nav className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center space-x-8 h-12 text-sm font-semibold">
-<<<<<<< HEAD
           <NavLink to="/good-deals" className={({ isActive }) => isActive ? 'text-green-600 border-b-2 border-green-600 h-full flex items-center' : 'text-gray-600 hover:text-gray-900 h-full flex items-center'}>Good deals</NavLink>
           <NavLink to="/ancient-remedies" className={({ isActive }) => isActive ? 'text-green-600 border-b-2 border-green-600 h-full flex items-center' : 'text-gray-600 hover:text-gray-900 h-full flex items-center'}>Ancient Remedies</NavLink>
           <NavLink to="/" className={({ isActive }) => isActive ? 'text-green-600 border-b-2 border-green-600 h-full flex items-center' : 'text-gray-600 hover:text-gray-900 h-full flex items-center'}>Tinctures</NavLink>
           <NavLink to="/supplements" className={({ isActive }) => isActive ? 'text-green-600 border-b-2 border-green-600 h-full flex items-center' : 'text-gray-600 hover:text-gray-900 h-full flex items-center'}>Supplements</NavLink>
-=======
-          <a href="#" className="text-green-600 border-b-2 border-green-600 h-full flex items-center">Good deals</a>
-          <a href="#" className="text-gray-600 hover:text-gray-900">Ancient Remedies</a>
-          <a href="#" className="text-gray-600 hover:text-gray-900">Tinctures</a>
-          <a href="#" className="text-gray-600 hover:text-gray-900">Supplements</a>
->>>>>>> f662d2a163fad1ffeb124f7467026e00b46cfaa1
           <a href="#" className="text-gray-600 hover:text-gray-900">Teas</a>
           <a href="#" className="text-gray-600 hover:text-gray-900">Body Care</a>
           <a href="#" className="text-gray-600 hover:text-gray-900">Bundles</a>

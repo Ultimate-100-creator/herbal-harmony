@@ -7,10 +7,20 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Environment variables
+.env
+.env*.local
+
 node_modules
 dist
 dist-ssr
 *.local
+
+# Vercel
+.vercel/
+
+# SQLite database file
+supplementiarx.db*
 
 # Editor directories and files
 .vscode/*

@@ -4,11 +4,21 @@ import { products, reviews } from './constants';
 import { Rating } from './components/Rating';
 import { ProductImageGallery } from '@/ProductImageGallery';
 import { SvgIcon } from './components/Icon';
+import { useCart } from './components/CartContext';
+import { toast } from 'react-toastify';
 
 export const ProductDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const [quantity, setQuantity] = useState(1);
   const product = products.find(p => p.id === Number(id));
+  const { addToCart } = useCart();
+
+  const handleAddToCart = () => {
+    if (product) {
+      addToCart(product, quantity);
+      toast.success(`${quantity} x ${product.name} added to cart!`);
+    }
+  };
 
   if (!product) {
     return (
@@ -47,9 +57,14 @@ export const ProductDetailPage: React.FC = () => {
             <span className="text-sm text-gray-600">({product.reviewCount} reviews)</span>
           </div>
           <p className="text-3xl font-bold mb-2">
-            ${product.price.toFixed(2)}
+            {new Intl.NumberFormat('en-NG', { style: 'currency', currency: 'NGN' }).format(product.price)}
             {product.originalPrice && (
-              <span className="text-xl text-gray-400 line-through ml-3">${product.originalPrice.toFixed(2)}</span>
+              <span className="text-xl text-gray-400 line-through ml-3">
+                {new Intl.NumberFormat('en-NG', {
+                  style: 'currency',
+                  currency: 'NGN',
+                }).format(product.originalPrice)}
+              </span>
             )}
             {discount > 0 && (
                 <span className="ml-4 inline-block bg-red-100 text-red-600 text-sm font-semibold px-2 py-1 rounded-md">
@@ -77,7 +92,10 @@ export const ProductDetailPage: React.FC = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="w-full bg-gray-900 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-800 transition-colors flex items-center justify-center gap-2">
+            <button
+              onClick={handleAddToCart}
+              className="w-full bg-gray-900 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-800 transition-colors flex items-center justify-center gap-2"
+            >
               <SvgIcon icon="cart" className="w-5 h-5" />
               Add to Cart
             </button>

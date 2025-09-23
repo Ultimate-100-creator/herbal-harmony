@@ -16,6 +16,10 @@ export interface CartItem extends Product {
   quantity: number;
 }
 
+export interface OrderProduct extends Pick<Product, 'id' | 'name' | 'price' | 'imageUrls'> {
+  quantity: number;
+}
+
 export interface Review {
   id: number;
   author: string;

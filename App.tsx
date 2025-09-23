@@ -19,6 +19,13 @@ import { GoodDeals } from './components/GoodDeals';
 import { AncientRemedies } from './components/AncientRemedies';
 import { Supplements } from './components/Supplements';
 import { ProductDetailPage } from './ProductDetailPage';
+import { CheckoutPage } from './CheckoutPage';
+import { OrderDetailPage } from './OrderDetailPage';
+import { TrackOrderPage } from './TrackOrderPage';
+import { OrderStatusPage } from './OrderStatusPage';
+import { OrdersPage } from './OrdersPage';
+import { OrderSuccessPage } from './OrderSuccessPage';
+import { CartPage } from './CartPage';
 
 const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -68,7 +75,7 @@ const App: React.FC = () => {
                 <div>
                   <p className="font-semibold text-purple-800">Herbal Remedies</p>
                   <h2 className="text-xl font-bold my-1">How much do our herbal tinctures cost?</h2>
-                  <p className="text-gray-600">In 2024, our herbal tinctures start at $12.00, but prices vary based on ingredients, size, and formulation.</p>
+                  <p className="text-gray-600">In 2024, our herbal tinctures start at ₦12,000.00, but prices vary based on ingredients, size, and formulation.</p>
                 </div>
                 <button className="ml-auto bg-white border border-gray-300 rounded-md px-6 py-2 font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap">
                   See more
@@ -122,6 +129,13 @@ const App: React.FC = () => {
           <Route path="/ancient-remedies" element={<AncientRemedies />} />
           <Route path="/supplements" element={<Supplements />} />
           <Route path="/product/:id" element={<ProductDetailPage />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
+          <Route path="/orders/:orderId" element={<OrderDetailPage />} />
+          <Route path="/track-order" element={<TrackOrderPage />} />
+          <Route path="/order-status/:orderId" element={<OrderStatusPage />} />
+          <Route path="/orders" element={<OrdersPage />} />
+          <Route path="/order-success" element={<OrderSuccessPage />} />
+          <Route path="/cart" element={<CartPage />} />
         </Routes>
           <Footer />
           <ToastContainer position="bottom-right" autoClose={3000} hideProgressBar={false} />
