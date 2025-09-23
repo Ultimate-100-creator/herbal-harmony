@@ -1,7 +1,10 @@
 
 import React from 'react';
 import { Icon, SvgIcon } from './Icon';
+<<<<<<< HEAD
 import { NavLink, Link } from 'react-router-dom';
+=======
+>>>>>>> f662d2a163fad1ffeb124f7467026e00b46cfaa1
 
 interface HeaderProps {
   searchQuery: string;
@@ -29,9 +32,15 @@ export const Header: React.FC<HeaderProps> = ({ searchQuery, onSearchChange }) =
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-8">
+<<<<<<< HEAD
             <Link to="/" className="text-2xl font-bold text-gray-900">
               supplentia<span className="text-green-600">rx</span>
             </Link>
+=======
+            <a href="#" className="text-2xl font-bold text-gray-900">
+              Herbal<span className="text-green-600">Harmony</span>
+            </a>
+>>>>>>> f662d2a163fad1ffeb124f7467026e00b46cfaa1
           </div>
           <div className="flex-1 max-w-lg mx-8">
             <div className="relative">
@@ -61,10 +70,17 @@ export const Header: React.FC<HeaderProps> = ({ searchQuery, onSearchChange }) =
       
       <div className="border-t">
         <nav className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center space-x-8 h-12 text-sm font-semibold">
+<<<<<<< HEAD
           <NavLink to="/good-deals" className={({ isActive }) => isActive ? 'text-green-600 border-b-2 border-green-600 h-full flex items-center' : 'text-gray-600 hover:text-gray-900 h-full flex items-center'}>Good deals</NavLink>
           <NavLink to="/ancient-remedies" className={({ isActive }) => isActive ? 'text-green-600 border-b-2 border-green-600 h-full flex items-center' : 'text-gray-600 hover:text-gray-900 h-full flex items-center'}>Ancient Remedies</NavLink>
           <NavLink to="/" className={({ isActive }) => isActive ? 'text-green-600 border-b-2 border-green-600 h-full flex items-center' : 'text-gray-600 hover:text-gray-900 h-full flex items-center'}>Tinctures</NavLink>
           <NavLink to="/supplements" className={({ isActive }) => isActive ? 'text-green-600 border-b-2 border-green-600 h-full flex items-center' : 'text-gray-600 hover:text-gray-900 h-full flex items-center'}>Supplements</NavLink>
+=======
+          <a href="#" className="text-green-600 border-b-2 border-green-600 h-full flex items-center">Good deals</a>
+          <a href="#" className="text-gray-600 hover:text-gray-900">Ancient Remedies</a>
+          <a href="#" className="text-gray-600 hover:text-gray-900">Tinctures</a>
+          <a href="#" className="text-gray-600 hover:text-gray-900">Supplements</a>
+>>>>>>> f662d2a163fad1ffeb124f7467026e00b46cfaa1
           <a href="#" className="text-gray-600 hover:text-gray-900">Teas</a>
           <a href="#" className="text-gray-600 hover:text-gray-900">Body Care</a>
           <a href="#" className="text-gray-600 hover:text-gray-900">Bundles</a>

@@ -9,6 +9,7 @@ export const products: Product[] = [
     details: 'Valerian • 50ml • Organic',
     rating: 4.6,
     reviewCount: 978,
+<<<<<<< HEAD
     price: 24.00, 
     originalPrice: 32.00, 
     imageUrls: ['https://images.unsplash.com/photo-1605650230219-9c515a454238?q=80&w=800&h=800&fit=crop'],
@@ -46,6 +47,11 @@ export const products: Product[] = [
       <h4 class="font-semibold mt-4 mb-2">Dosage:</h4>
       <p>Two capsules to be taken 1 hour before anticipated intercourse, or one capsule twice daily for restorative benefits.</p>
       <p class="mt-2 text-sm"><em>Result may vary with individuals. If you are on any medications, consult a medical professional before taking this product. No known side effects.</em></p>`,
+=======
+    price: 24.00,
+    originalPrice: 32.00,
+    imageUrl: 'https://images.unsplash.com/photo-1605650230219-9c515a454238?q=80&w=800&h=800&fit=crop',
+>>>>>>> f662d2a163fad1ffeb124f7467026e00b46cfaa1
   },
   {
     id: 2,
@@ -56,7 +62,11 @@ export const products: Product[] = [
     reviewCount: 862,
     price: 28.50,
     originalPrice: 35.00,
+<<<<<<< HEAD
     imageUrls: ['https://images.unsplash.com/photo-1596706385906-e87515409153?q=80&w=800&h=800&fit=crop'],
+=======
+    imageUrl: 'https://images.unsplash.com/photo-1596706385906-e87515409153?q=80&w=800&h=800&fit=crop',
+>>>>>>> f662d2a163fad1ffeb124f7467026e00b46cfaa1
   },
   {
     id: 3,
@@ -67,7 +77,11 @@ export const products: Product[] = [
     reviewCount: 885,
     price: 21.00,
     originalPrice: 28.00,
+<<<<<<< HEAD
     imageUrls: ['https://images.unsplash.com/photo-1620340222446-208a0a454238?q=80&w=800&h=800&fit=crop'],
+=======
+    imageUrl: 'https://images.unsplash.com/photo-1620340222446-208a0a93ad55?q=80&w=800&h=800&fit=crop',
+>>>>>>> f662d2a163fad1ffeb124f7467026e00b46cfaa1
   },
   {
     id: 4,
@@ -78,7 +92,11 @@ export const products: Product[] = [
     reviewCount: 863,
     price: 32.00,
     originalPrice: 40.00,
+<<<<<<< HEAD
     imageUrls: ['https://images.unsplash.com/photo-1610011037434-a6983578b943?q=80&w=800&h=800&fit=crop'],
+=======
+    imageUrl: 'https://images.unsplash.com/photo-1610011037434-a6983578b943?q=80&w=800&h=800&fit=crop',
+>>>>>>> f662d2a163fad1ffeb124f7467026e00b46cfaa1
   },
   {
     id: 5,
@@ -89,7 +107,11 @@ export const products: Product[] = [
     reviewCount: 882,
     price: 29.49,
     originalPrice: 36.00,
+<<<<<<< HEAD
     imageUrls: ['https://images.unsplash.com/photo-1600322369586-31a89a057e4e?q=80&w=800&h=800&fit=crop'],
+=======
+    imageUrl: 'https://images.unsplash.com/photo-1600322369586-31a89a057e4e?q=80&w=800&h=800&fit=crop',
+>>>>>>> f662d2a163fad1ffeb124f7467026e00b46cfaa1
   },
   {
     id: 6,
@@ -100,7 +122,11 @@ export const products: Product[] = [
     reviewCount: 867,
     price: 25.00,
     originalPrice: 33.00,
+<<<<<<< HEAD
     imageUrls: ['https://images.unsplash.com/photo-1627833054817-38875c2e35f4?q=80&w=800&h=800&fit=crop'],
+=======
+    imageUrl: 'https://images.unsplash.com/photo-1627833054817-38875c2e35f4?q=80&w=800&h=800&fit=crop',
+>>>>>>> f662d2a163fad1ffeb124f7467026e00b46cfaa1
   },
   {
     id: 7,
@@ -111,7 +137,11 @@ export const products: Product[] = [
     reviewCount: 869,
     price: 27.00,
     originalPrice: 34.00,
+<<<<<<< HEAD
     imageUrls: ['https://images.unsplash.com/photo-1615725797378-f6a84793e273?q=80&w=800&h=800&fit=crop'],
+=======
+    imageUrl: 'https://images.unsplash.com/photo-1615725797378-f6a84793e273?q=80&w=800&h=800&fit=crop',
+>>>>>>> f662d2a163fad1ffeb124f7467026e00b46cfaa1
   },
   {
     id: 8,
@@ -122,7 +152,11 @@ export const products: Product[] = [
     reviewCount: 855,
     price: 26.90,
     originalPrice: 33.00,
+<<<<<<< HEAD
     imageUrls: ['https://images.unsplash.com/photo-1606804264332-2780b43f993d?q=80&w=800&h=800&fit=crop'],
+=======
+    imageUrl: 'https://images.unsplash.com/photo-1606804264332-2780b43f993d?q=80&w=800&h=800&fit=crop',
+>>>>>>> f662d2a163fad1ffeb124f7467026e00b46cfaa1
   },
     {
     id: 9,
@@ -133,7 +167,11 @@ export const products: Product[] = [
     reviewCount: 1021,
     price: 22.50,
     originalPrice: 29.00,
+<<<<<<< HEAD
     imageUrls: ['https://images.unsplash.com/photo-1598514983318-78207137b084?q=80&w=800&h=800&fit=crop'],
+=======
+    imageUrl: 'https://images.unsplash.com/photo-1598514983318-78207137b084?q=80&w=800&h=800&fit=crop',
+>>>>>>> f662d2a163fad1ffeb124f7467026e00b46cfaa1
   },
   {
     id: 10,
@@ -144,7 +182,11 @@ export const products: Product[] = [
     reviewCount: 954,
     price: 35.00,
     originalPrice: 42.00,
+<<<<<<< HEAD
     imageUrls: ['https://images.unsplash.com/photo-1618193138875-293b16a2b25c?q=80&w=800&h=800&fit=crop'],
+=======
+    imageUrl: 'https://images.unsplash.com/photo-1618193138875-293b16a2b25c?q=80&w=800&h=800&fit=crop',
+>>>>>>> f662d2a163fad1ffeb124f7467026e00b46cfaa1
   },
 ];
 
@@ -155,16 +197,26 @@ export const reviews: Review[] = [
     initial: 'I',
     date: 'Purchased on April 7, 2025',
     rating: 5,
+<<<<<<< HEAD
     comment: 'I rate this 5 stars because I\'m super impressed with supplentiarx, and their certified organic products. It meant it when it said excellent, there were no issues, and an extra bonus was it came with a little guide on uses. I\'ve never bought tinctures online before but I feel proud to be apart of back market in helping the world, even though I didn\'t get the experience of walking into an apothecary it still feels like I did, so Thanks to all of you that made this possible for me and everyone else, I really appreciate it!',
+=======
+    comment: 'I rate this 5 stars because I\'m super impressed with Herbal Harmony, and their certified organic products. It meant it when it said excellent, there were no issues, and an extra bonus was it came with a little guide on uses. I\'ve never bought tinctures online before but I feel proud to be apart of back market in helping the world, even though I didn\'t get the experience of walking into an apothecary it still feels like I did, so Thanks to all of you that made this possible for me and everyone else, I really appreciate it!',
+>>>>>>> f662d2a163fad1ffeb124f7467026e00b46cfaa1
     images: [
       'https://picsum.photos/seed/review1a/200/200',
       'https://picsum.photos/seed/review1b/200/200',
       'https://picsum.photos/seed/review1c/200/200',
     ],
     item: {
+<<<<<<< HEAD
       name: 'Ginja Bull',
       details: 'Tribulus • Anthocleista • 500000MCG',
       imageUrl: '/images/products/Ginja Bull.png', // Note: This is a single URL, you might want to align this with the new Product type if needed.
+=======
+      name: 'Serenity Root',
+      details: 'Valerian • 50ml • Organic',
+      imageUrl: 'https://images.unsplash.com/photo-1605650230219-9c515a454238?q=80&w=800&h=800&fit=crop',
+>>>>>>> f662d2a163fad1ffeb124f7467026e00b46cfaa1
     },
     condition: 'Excellent',
     reviewDate: 'Reviewed in Nigeria on April 12, 2025'
@@ -180,7 +232,11 @@ export const reviews: Review[] = [
     item: {
       name: 'Vitality Blend',
       details: 'Ginseng • 50ml • Non-GMO',
+<<<<<<< HEAD
       imageUrl: 'https://images.unsplash.com/photo-1596706385906-e87515409153?q=80&w=800&h=800&fit=crop', // Note: This is a single URL
+=======
+      imageUrl: 'https://images.unsplash.com/photo-1596706385906-e87515409153?q=80&w=800&h=800&fit=crop',
+>>>>>>> f662d2a163fad1ffeb124f7467026e00b46cfaa1
     },
     condition: 'Excellent',
     reviewDate: 'Reviewed in Nigeria on January 15, 2025'

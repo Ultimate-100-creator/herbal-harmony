@@ -9,10 +9,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@types/react-router-dom": "^5.3.3",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.9.1"
+=======
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+>>>>>>> f662d2a163fad1ffeb124f7467026e00b46cfaa1
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
